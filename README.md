@@ -5,6 +5,8 @@
 
 [zarf](https://github.com/defenseunicorns/zarf) plugin for the [asdf version manager](https://asdf-vm.com).
 
+This proof-of-concept ASDF plugin is not officially supported by the Zarf team. Use at your own risk.
+
 </div>
 
 # Contents
@@ -16,18 +18,14 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
+- *NIX system (tested on Linux and macOS)
 - `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
 
 # Install
 
 Plugin:
 
 ```shell
-asdf plugin add zarf
-# or
 asdf plugin add zarf https://github.com/defenseunicorns/asdf-zarf.git
 ```
 
@@ -38,10 +36,10 @@ zarf:
 asdf list-all zarf
 
 # Install specific version
-asdf install zarf latest
+asdf install zarf X.Y.Z
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global zarf latest
+asdf global zarf X.Y.Z
 
 # Now zarf commands are available
 zarf version
