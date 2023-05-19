@@ -44,6 +44,10 @@ download_release() {
 	# Zarf uses the string "amd64" if arch is x86_64
 	if [[ "${ARCH}" == "x86_64" ]]; then
 		ARCH="amd64"
+	elif
+		[[ "${ARCH}" == "aarch64" ]]
+	then
+		ARCH="arm64"
 	fi
 
 	arch="${ARCH}"
