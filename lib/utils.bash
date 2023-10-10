@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/defenseunicorns/zarf"
-TOOL_NAME="zarf"
-TOOL_TEST="zarf version"
+GH_REPO="https://github.com/gruntwork-io/git-xargs"
+TOOL_NAME="git-xargs"
+TOOL_TEST="git-xargs --version"
 
 fail() {
 	echo -e "asdf-$TOOL_NAME: $*"
@@ -41,7 +41,7 @@ download_release() {
 	ARCH=$(uname -m)
 	OS=$(uname -s)
 
-	# Zarf uses the string "amd64" if arch is x86_64
+	# git-xargs uses the string "amd64" if arch is x86_64
 	if [[ "${ARCH}" == "x86_64" ]]; then
 		ARCH="amd64"
 	elif
@@ -52,7 +52,7 @@ download_release() {
 
 	arch="${ARCH}"
 	os="${OS}"
-	url="${GH_REPO}/releases/download/v${version}/zarf_v${version}_${os}_${arch}"
+	url="${GH_REPO}/releases/download/v${version}/git-xargs_${os}_${arch}"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"

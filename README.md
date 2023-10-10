@@ -1,11 +1,11 @@
 <div align="center">
 
-# asdf-zarf [![Build](https://github.com/defenseunicorns/asdf-zarf/actions/workflows/build.yml/badge.svg)](https://github.com/defenseunicorns/asdf-zarf/actions/workflows/build.yml) [![Lint](https://github.com/defenseunicorns/asdf-zarf/actions/workflows/lint.yml/badge.svg)](https://github.com/defenseunicorns/asdf-zarf/actions/workflows/lint.yml)
+# asdf-git-xargs [![Build](https://github.com/defenseunicorns/asdf-git-xargs/actions/workflows/build.yml/badge.svg)](https://github.com/defenseunicorns/asdf-git-xargs/actions/workflows/build.yml) [![Lint](https://github.com/defenseunicorns/asdf-git-xargs/actions/workflows/lint.yml/badge.svg)](https://github.com/defenseunicorns/asdf-git-xargs/actions/workflows/lint.yml)
 
 
-[zarf](https://github.com/defenseunicorns/zarf) plugin for the [asdf version manager](https://asdf-vm.com).
+[git-xargs](https://github.com/gruntwork-io/git-xargs) plugin for the [asdf version manager](https://asdf-vm.com).
 
-This proof-of-concept ASDF plugin is not officially supported by the Zarf team. Use at your own risk.
+This unofficial ASDF plugin is not officially supported by the git-xargs team. Use at your own risk.
 
 </div>
 
@@ -26,23 +26,23 @@ This proof-of-concept ASDF plugin is not officially supported by the Zarf team. 
 Plugin:
 
 ```shell
-asdf plugin add zarf https://github.com/defenseunicorns/asdf-zarf.git
+asdf plugin add git-xargs https://github.com/defenseunicorns/asdf-git-xargs.git
 ```
 
-zarf:
+git-xargs:
 
 ```shell
 # Show all installable versions
-asdf list-all zarf
+asdf list-all git-xargs
 
 # Install specific version
-asdf install zarf X.Y.Z
+asdf install git-xargs X.Y.Z
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global zarf X.Y.Z
+asdf global git-xargs X.Y.Z
 
-# Now zarf commands are available
-zarf version
+# Now git-xargs commands are available
+git-xargs --version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
@@ -50,9 +50,9 @@ install & manage versions.
 
 # Contributing
 
-Contributions of any kind welcome! See the [contributing guide](contributing.md).
+Contributions of any kind welcome! See the [contributing guide](CONTRIBUTING.md).
 
-[Thanks goes to these contributors](https://github.com/defenseunicorns/asdf-zarf/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/defenseunicorns/asdf-git-xargs/graphs/contributors)!
 
 # License
 
